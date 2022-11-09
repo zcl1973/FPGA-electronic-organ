@@ -1,0 +1,969 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 12244
+License: Customer
+
+Current time: 	Mon Oct 31 10:01:51 GMT+08:00 2022
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	H:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	H:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	JACK
+User home directory: C:/Users/JACK
+User working directory: C:/Users/JACK/Desktop/ov5640_multi_moving_detect3
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: H:/Xilinx/Vivado
+HDI_APPROOT: H:/Xilinx/Vivado/2019.2
+RDI_DATADIR: H:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: H:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/JACK/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/JACK/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/JACK/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	H:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/vivado.log
+Vivado journal file location: 	C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/vivado.jou
+Engine tmp dir: 	C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/.Xil/Vivado-12244-LAPTOP-JOPBKSTS
+
+Xilinx Environment Variables
+----------------------------
+XILINX: H:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: H:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: H:/Xilinx/Vivado/2019.2
+XILINX_SDK: H:/Xilinx/Vitis/2019.2
+XILINX_VITIS: H:/Xilinx/Vitis/2019.2
+XILINX_VIVADO: H:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: H:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 676 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\JACK\Desktop\ov5640_multi_moving_detect3\ov5640_multi_moving_detect3.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 115 MB (+117765kb) [00:00:09]
+// [Engine Memory]: 759 MB (+643877kb) [00:00:09]
+// [Engine Memory]: 797 MB (+461kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2433 ms.
+// Tcl Message: open_project C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 811 MB. GUI used memory: 59 MB. Current time: 10/31/22, 10:01:55 AM GMT+08:00
+// WARNING: HEventQueue.dispatchEvent() is taking  1064 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 838.836 ; gain = 189.223 
+// [Engine Memory]: 1,094 MB (+269587kb) [00:00:12]
+// Project name: ov5640_multi_moving_detect3; location: C:/Users/JACK/Desktop/ov5640_multi_moving_detect3; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 5); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "upgrade_ip [get_ips]\", true); // aF (ac, cr)
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Message: upgrade_ip [get_ips] 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 154, 48); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+// [GUI Memory]: 123 MB (+2766kb) [00:00:59]
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 6, false); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Successfully read diagram <system> from BD file <C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,154 MB (+5329kb) [00:01:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1228 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// 'bD' command handler elapsed time: 3 seconds
+// a (cr): Critical Messages: addNotify
+dismissDialog("Open Block Design"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,161 MB. GUI used memory: 69 MB. Current time: 10/31/22, 10:02:58 AM GMT+08:00
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+// Tcl Command: 'set_property location {-127 608} [get_bd_ports cam_pwdn]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-127 608} [get_bd_ports cam_pwdn] 
+// [GUI Memory]: 129 MB (+155kb) [00:01:52]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports data] [get_bd_pins ov5640_capture_data_1/cam_data] 
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "upgrade_ip [get_ips]", true); // aF (ac, cr)
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Message: upgrade_ip [get_ips] 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 579, 58); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 536, 77); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 529, 63); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 627, 81); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 516, 67); // dT (af, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 5); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 550, 77); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 522, 67); // dT (af, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// I (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1221 ms.
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (E, I)
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 136 MB (+203kb) [00:03:17]
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 148 MB (+5427kb) [00:03:17]
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// bB (cr):  Refresh All IP Repositories : addNotify
+dismissDialog("Refresh All IP Repositories"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,263 MB. GUI used memory: 94 MB. Current time: 10/31/22, 10:05:03 AM GMT+08:00
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,263 MB (+54549kb) [00:03:22]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// bB (cr):  Refresh All IP Repositories : addNotify
+dismissDialog("Refresh All IP Repositories"); // bB (cr)
+// [Engine Memory]: 1,336 MB (+9683kb) [00:03:24]
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (f, I)
+// [Engine Memory]: 1,412 MB (+9916kb) [00:03:28]
+// [GUI Memory]: 160 MB (+5093kb) [00:03:28]
+setFolderChooser("C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ip_repo");
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ip_repo [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ip_repo'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// bB (cr):  Refresh All IP Repositories : addNotify
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// c (I): Add Repository: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 100 MB. Current time: 10/31/22, 10:05:18 AM GMT+08:00
+// [Engine Memory]: 1,506 MB (+24116kb) [00:03:34]
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (I)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_RE_RUN_REPORT, (String) null); // E (f, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cr)
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_RE_RUN_REPORT, (String) null); // E (f, cr)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+// [GUI Memory]: 172 MB (+4255kb) [00:04:04]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "upgrade_ip [get_ips]", true); // aF (ac, cr)
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Message: upgrade_ip [get_ips] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 10); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Show IP Hierarchy"); // A (cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 100 MB. Current time: 10/31/22, 10:35:18 AM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 11:05:19 AM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 87 MB. Current time: 10/31/22, 11:35:19 AM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 12:05:19 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 12:35:20 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 1:05:20 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 1:35:20 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 2:05:21 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 87 MB. Current time: 10/31/22, 2:35:21 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 88 MB. Current time: 10/31/22, 3:05:21 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 87 MB. Current time: 10/31/22, 3:35:22 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 87 MB. Current time: 10/31/22, 4:05:22 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 87 MB. Current time: 10/31/22, 4:35:22 PM GMT+08:00
+// Elapsed time: 23763 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+// Elapsed time: 31 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // S (aI, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 10, false); // B (F, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "upgrade_ip [get_ips]", true); // aF (ac, cr)
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Message: upgrade_ip [get_ips] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 10, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 10, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''system_ov5640_capture_data_1_0.xci' IP is part of a block design. (Re-customize IP)'
+// 'B' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 502, 219); // dT (af, cr)
+// Elapsed time: 69 seconds
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (ds, cr)
+selectMenuItem(RDIResource.HEditorPane_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bB (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // bB (SwingUtilities.SharedOwnerFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "VIP"); // OverlayTextField (ay, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2, "VIP_moving_detect_v1.0", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2, "VIP_moving_detect_v1.0", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2, "VIP_moving_detect_v1.0", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name VIP_moving_detect -vendor xilinx.com -library user -version 1.0 -module_name VIP_moving_detect_0 -dir c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_0/VIP_moving_detect_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VIP_moving_detect_0'... 
+// aI (cr): Generate Output Products: addNotify
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a (Q, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_0/VIP_moving_detect_0.xci] 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_0/VIP_moving_detect_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VIP_moving_detect_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'VIP_moving_detect_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'VIP_moving_detect_0'... INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'VIP_moving_detect_0'... INFO: [IP_Flow 19-3422] Upgraded c_shift_ram_0 (RAM-based Shift Register 12.0) from revision 12 to revision 14 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded fifo_generator_0 (FIFO Generator 13.2) from revision 3 to revision 5 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_0/VIP_moving_detect_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 12 seconds
+dismissDialog("Managing Output Products"); // bB (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 20); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 20); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 20, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(RDIResource.FilterToolBar_HIDE_ALL, "Hide All"); // a (f, cr)
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, cr)
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cr)
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1, false, false, false, false, true); // B (O, cr) - Double Click
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "upgrade_ip [get_ips]", true); // aF (ac, cr)
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Command: 'upgrade_ip [get_ips]'
+// Tcl Message: upgrade_ip [get_ips] 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''system_ov5640_capture_data_1_0.xci' IP is part of a block design. (Re-customize IP)'
+// [GUI Memory]: 181 MB (+180kb) [06:44:22]
+// Launch External Editor: 'H:/Notepad++/notepad++.exe "C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/hdl/system_wrapper.v" -l12'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_moving_detect_0 (VIP_moving_detect_0.xci)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_moving_detect_0 (VIP_moving_detect_0.xci)]", 5); // B (F, cr)
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ila_0 (ila_0.xci)]", 6, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ila_0 (ila_0.xci)]", 6, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/ip/system_VIP_moving_detect_1_0/system_VIP_moving_detect_1_0.xci] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: remove_files  C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/ip/system_VIP_moving_detect_1_0/system_VIP_moving_detect_1_0.xci 
+// Tcl Message: file delete -force C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.ip_user_files/sim_scripts/system_VIP_moving_detect_1_0 
+dismissDialog("Remove Sources"); // bB (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/ip/system_ov5640_capture_data_1_0/system_ov5640_capture_data_1_0.xci] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/ip/system_ov5640_capture_data_1_0/system_ov5640_capture_data_1_0.xci 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: file delete -force C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.ip_user_files/sim_scripts/system_ov5640_capture_data_1_0 
+// [GUI Memory]: 192 MB (+1352kb) [06:44:47]
+dismissDialog("Remove Sources"); // bB (aE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.v)]", 4); // B (F, cr)
+// [GUI Memory]: 208 MB (+6825kb) [06:44:53]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (ds, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2, "VIP_moving_detect_v1.0", 0, false); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0 ; AXI4, AXI4-Stream ; Beta ; Included ; xilinx.com:user:VIP_moving_detect:1.0", 2, "VIP_moving_detect_v1.0", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name VIP_moving_detect -vendor xilinx.com -library user -version 1.0 -module_name VIP_moving_detect_1 -dir c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_1/VIP_moving_detect_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VIP_moving_detect_1'... 
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a (Q, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_1/VIP_moving_detect_1.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_1/VIP_moving_detect_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VIP_moving_detect_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'VIP_moving_detect_1'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'VIP_moving_detect_1'... INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'VIP_moving_detect_1'... INFO: [IP_Flow 19-3422] Upgraded c_shift_ram_0 (RAM-based Shift Register 12.0) from revision 12 to revision 14 INFO: [IP_Flow 19-3422] Upgraded fifo_generator_0 (FIFO Generator 13.2) from revision 3 to revision 5 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/VIP_moving_detect_1/VIP_moving_detect_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 223 MB (+4905kb) [06:45:09]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bB)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "5640"); // OverlayTextField (ay, cr)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ov5640_capture_data_v1_0 ;  ; Production ; Included ; alientek.com:user:ov5640_capture_data:1.0", 2, "ov5640_capture_data_v1_0", 0, false); // L (O, cr)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ov5640_capture_data_v1_0 ;  ; Production ; Included ; alientek.com:user:ov5640_capture_data:1.0", 2); // L (O, cr)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ov5640_capture_data_v1_0 ;  ; Production ; Included ; alientek.com:user:ov5640_capture_data:1.0", 2, "ov5640_capture_data_v1_0", 0, false, false, false, false, false, true); // L (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cr)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name ov5640_capture_data -vendor alientek.com -library user -version 1.0 -module_name ov5640_capture_data_0 -dir c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ov5640_capture_data_0/ov5640_capture_data_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ov5640_capture_data_0'... 
+// aI (cr): Generate Output Products: addNotify
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a (Q, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bB (cr):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ov5640_capture_data_0/ov5640_capture_data_0.xci] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ov5640_capture_data_0/ov5640_capture_data_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ov5640_capture_data_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ov5640_capture_data_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ov5640_capture_data_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ov5640_capture_data_0/ov5640_capture_data_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bB)
+// [GUI Memory]: 239 MB (+4711kb) [06:45:30]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VIP_moving_detect_0 (VIP_moving_detect_0.xci)]", 19); // B (F, cr)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ai (ao, Popup.HeavyWeightWindow)
+// [GUI Memory]: 251 MB (+476kb) [06:45:46]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_ov5640_capture_data_1_0 (system_ov5640_capture_data_1_0.xci)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTreeTableHeader(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "Upgrade", 1); // B (O, cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cr)
+collapseTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "system ; false ;  ; system ;  ;  ;  ;  ;  ; ", 0); // B (O, cr)
+expandTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "VIP_moving_detect_0 ; false ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; No changes required ;  ; VIP_moving_detect_v1.0 ; 1.0 (Rev. 21) ; 1.0 (Rev. 21) ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; xc7z020clg400-2", 1); // B (O, cr)
+collapseTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "VIP_moving_detect_0 ; false ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; No changes required ;  ; VIP_moving_detect_v1.0 ; 1.0 (Rev. 21) ; 1.0 (Rev. 21) ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; xc7z020clg400-2", 1); // B (O, cr)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "VIP_moving_detect_0 ; false ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; No changes required ;  ; VIP_moving_detect_v1.0 ; 1.0 (Rev. 21) ; 1.0 (Rev. 21) ; VIP_moving_detect_0 [VIP_moving_detect_v1.0] (Up-to-date) ; xc7z020clg400-2", 1, "VIP_moving_detect_0", 0, false); // B (O, cr)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "c_shift_ram_0 ; false ; c_shift_ram_0 [RAM-based Shift Register] (Up-to-date) ; No changes required ; c_shift_ram_0 [RAM-based Shift Register] (Up-to-date) ; RAM-based Shift Register ; 12.0 (Rev. 14) ; 12.0 (Rev. 14) ; c_shift_ram_0 [RAM-based Shift Register] (Up-to-date) ; xc7z020clg400-2", 2, "c_shift_ram_0", 0, false); // B (O, cr)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "fifo_generator_0 ; false ; fifo_generator_0 [FIFO Generator] (Up-to-date) ; No changes required ; fifo_generator_0 [FIFO Generator] (Up-to-date) ; FIFO Generator ; 13.2 (Rev. 5) ; 13.2 (Rev. 5) ; fifo_generator_0 [FIFO Generator] (Up-to-date) ; xc7z020clg400-2", 3, "fifo_generator_0", 0, false); // B (O, cr)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "ila_0 ; false ; ila_0 [ILA (Integrated Logic Analyzer)] (Up-to-date) ; No changes required ; ila_0 [ILA (Integrated Logic Analyzer)] (Up-to-date) ; ILA (Integrated Logic Analyzer) ; 6.2 (Rev. 10) ; 6.2 (Rev. 10) ; ila_0 [ILA (Integrated Logic Analyzer)] (Up-to-date) ; xc7z020clg400-2", 4, "ila_0", 0, true); // B (O, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ila_0 (ila_0.xci)]", 28, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/ip/ila_0/ila_0.xci 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+dismissDialog("Remove Sources"); // bB (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (ds, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (ds, cr)
+selectMenuItem(RDIResource.HEditorPane_COPY, "Copy"); // ai (ao, Popup.HeavyWeightWindow)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd), system_VIP_moving_detect_1_0 (system_VIP_moving_detect_1_0.xci)]", 3, false); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {C:/Users/JACK/Desktop/ov5640_multi_moving_detect3/ov5640_multi_moving_detect3.srcs/sources_1/bd/system/system.bd} 
+dismissDialog("Open Block Design"); // bB (cr)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 887, 218, 1307, 339, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ai (ao, Popup.HeavyWeightWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "VIP"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0", 4, "VIP_moving_detect_v1.0", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0", 4); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIP_moving_detect_v1.0", 4, "VIP_moving_detect_v1.0", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:VIP_moving_detect:1.0 VIP_moving_detect_0 
+// Tcl Message: endgroup 
+// [GUI Memory]: 268 MB (+4689kb) [06:46:40]
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 448, 130, 1307, 339, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 546, 99, 1307, 339, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 790, 209, 1307, 339, false, false, false, true, false); // go (i, cr) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M02_AXI] [get_bd_intf_pins VIP_moving_detect_0/S0_AXI] 
